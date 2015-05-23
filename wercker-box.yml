@@ -1,5 +1,5 @@
 name : grunt-yeoman
-version : 0.0.4
+version : 0.0.5
 inherits : wercker/ubuntu12.04-webessentials@1.0.4
 description : wercker box for Yeoman Project
 type : main
@@ -74,3 +74,6 @@ script: |
   tar xfj phantomjs-$PHANTOM_VERSION-linux-x86_64.tar.bz2
   sudo cp phantomjs-$PHANTOM_VERSION-linux-x86_64/bin/phantomjs /home/ubuntu/phantomjs/bin/phantomjs
 
+  # protractor
+  sudo npm install -g protractor
+  webdriver-manager update
