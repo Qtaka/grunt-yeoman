@@ -75,5 +75,6 @@ script: |
   sudo cp phantomjs-$PHANTOM_VERSION-linux-x86_64/bin/phantomjs /home/ubuntu/phantomjs/bin/phantomjs
 
   # protractor
+  sudo ls -l
   sudo npm install -g protractor
   webdriver-manager update
