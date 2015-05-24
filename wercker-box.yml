@@ -55,7 +55,8 @@ script: |
 
   # protractor
   sudo npm install -g protractor
-  webdriver-manager update
+  sudo chown -R `whoami` ~/.npm/
+  sudo webdriver-manager update
 
   # ruby
   sudo apt-get install git zlib1g-dev libreadline-dev libqtwebkit-dev curl -y
