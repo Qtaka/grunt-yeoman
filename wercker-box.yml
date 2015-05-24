@@ -76,8 +76,7 @@ script: |
 
   # protractor
   who am i
-  sudo who am i
-  sudo ls -l /home/ubuntu/.node-gyp
-  sudo ls -l /usr/local/lib/node_modules
+  sudo ls -la /home/ubuntu
+  sudo ls -la /usr/local/lib/node_modules
   sudo npm install -g protractor
   webdriver-manager update
