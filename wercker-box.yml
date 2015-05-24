@@ -55,7 +55,6 @@ script: |
 
   # protractor
   sudo npm install -g protractor
-  sudo chown -R `whoami` ~/.npm/
   sudo webdriver-manager update
 
   # ruby
