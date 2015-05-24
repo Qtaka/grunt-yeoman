@@ -50,6 +50,13 @@ script: |
   sudo npm install -g n
   sudo n stable
 
+  # install global npm packages
+  sudo npm install -g grunt-cli bower
+
+  # protractor
+  sudo npm install -g protractor
+  webdriver-manager update
+
   # ruby
   sudo apt-get install git zlib1g-dev libreadline-dev libqtwebkit-dev curl -y
   sudo apt-get remove ruby1.9.1
@@ -65,15 +72,8 @@ script: |
   gem install bundler -v 1.9.4
   gem install compass -v 1.0.3
 
-  # install global npm packages
-  sudo npm install -g grunt-cli bower
-
   # phantomjs
   export PHANTOM_VERSION=1.9.8
   wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-${PHANTOM_VERSION}-linux-x86_64.tar.bz2
   tar xfj phantomjs-$PHANTOM_VERSION-linux-x86_64.tar.bz2
   sudo cp phantomjs-$PHANTOM_VERSION-linux-x86_64/bin/phantomjs /home/ubuntu/phantomjs/bin/phantomjs
-
-  # protractor
-  npm install -g protractor
-  webdriver-manager update
