@@ -50,6 +50,10 @@ script: |
   sudo npm install -g n
   sudo n stable
 
+  # protractor
+  sudo npm install -g protractor
+  webdriver-manager update
+
   # ruby
   sudo apt-get install git zlib1g-dev libreadline-dev libqtwebkit-dev curl -y
   sudo apt-get remove ruby1.9.1
@@ -73,7 +77,3 @@ script: |
   wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-${PHANTOM_VERSION}-linux-x86_64.tar.bz2
   tar xfj phantomjs-$PHANTOM_VERSION-linux-x86_64.tar.bz2
   sudo cp phantomjs-$PHANTOM_VERSION-linux-x86_64/bin/phantomjs /home/ubuntu/phantomjs/bin/phantomjs
-
-  # protractor
-  npm install -g protractor
-  webdriver-manager update
